@@ -864,6 +864,7 @@
       .coverage-section, .faq-section { padding: 60px 20px; }
       .form-row { grid-template-columns: 1fr; }
       footer { flex-direction: column; text-align: center; }
+      .video-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -954,7 +955,7 @@
 
           <!-- Two side-by-side buttons -->
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-            <a href="tel:+14083415826" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border:1.5px solid var(--gold);border-radius:6px;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(201,151,58,0.08)'" onmouseout="this.style.background='transparent'">
+            <a href="tel:+14083415826"  style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border:1.5px solid var(--gold);border-radius:6px;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(201,151,58,0.08)'" onmouseout="this.style.background='transparent'">
               📞 Call Now
             </a>
             <a href="https://calendly.com/mosesrey/new-meeting" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border:1.5px solid var(--border);border-radius:6px;color:var(--text-muted);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
@@ -987,6 +988,27 @@
       <div>
         <div class="stat-number">Bay Area</div>
         <div class="stat-label">Local agent, local service</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BANNER (Golden Memorial style) -->
+  <div style="background:var(--gold);padding:14px 40px;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;color:var(--navy);font-size:0.88rem;font-weight:600;">
+        <span>✓</span> No Medical Exam Required
+      </div>
+      <div style="width:1px;height:18px;background:rgba(13,27,42,0.2);"></div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--navy);font-size:0.88rem;font-weight:600;">
+        <span>✓</span> Rates Never Increase
+      </div>
+      <div style="width:1px;height:18px;background:rgba(13,27,42,0.2);"></div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--navy);font-size:0.88rem;font-weight:600;">
+        <span>✓</span> Coverage in 24 Hours
+      </div>
+      <div style="width:1px;height:18px;background:rgba(13,27,42,0.2);"></div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--navy);font-size:0.88rem;font-weight:600;">
+        <span>✓</span> Licensed Local Agent
       </div>
     </div>
   </div>
@@ -1123,6 +1145,35 @@
           <div>
             <div class="testimonial-name">Linda R.</div>
             <div class="testimonial-location">Campbell, CA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO TESTIMONIALS -->
+  <section style="padding:100px 40px;background:var(--navy);">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="section-eyebrow">See It For Yourself</div>
+      <h2 class="section-title">Real Clients. Real Stories.</h2>
+      <p class="section-sub" style="margin-bottom:60px;">Hear directly from families who chose Moses for their final expense coverage.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+        <div style="border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe src="https://www.youtube.com/embed/lbixwEOo56k" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+          </div>
+          <div style="padding:20px 24px;background:var(--navy-light);">
+            <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--white);margin-bottom:4px;">Family Protected in San Jose</div>
+            <div style="font-size:0.82rem;color:var(--gold);">★★★★★ &nbsp; Final Expense Coverage</div>
+          </div>
+        </div>
+        <div style="border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe src="https://www.youtube.com/embed/pAw_bcMhAps" title="Client Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+          </div>
+          <div style="padding:20px 24px;background:var(--navy-light);">
+            <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--white);margin-bottom:4px;">Bay Area Family Shares Their Experience</div>
+            <div style="font-size:0.82rem;color:var(--gold);">★★★★★ &nbsp; Final Expense Coverage</div>
           </div>
         </div>
       </div>
