@@ -912,17 +912,58 @@
           </div>
         </div>
       <div class="form-card" id="quote">
-        <div class="form-title">Schedule Your Free Quote Call</div>
-        <div class="form-sub">Book a quick call with Moses. No obligation, no pressure — just honest answers about your coverage options.</div>
-        <ul class="coverage-features" style="margin:24px 0 28px;">
-          <li>Personalized quote for your situation</li>
-          <li>No medical exam questions on the call</li>
-          <li>Coverage options that fit your budget</li>
-          <li>Speak directly with a licensed local agent</li>
-        </ul>
-        <a href="https://calendly.com/mosesrey/new-meeting" target="_blank" rel="noopener" class="btn-form" style="display:block;text-align:center;text-decoration:none;line-height:1.2;">Book My Free Call →</a>
-        <a href="tel:+14085551234" class="btn-form" style="display:block;text-align:center;text-decoration:none;background:transparent;border:1px solid var(--gold);color:var(--gold);margin-top:12px;line-height:1.2;">Or Call Now: (408) 555-1234</a>
-        <div class="form-disclaimer">By booking, you agree to be contacted by Moses Reyes regarding insurance options. Your info is never sold.</div>
+        <div class="form-title">Get Your Free Quote</div>
+        <div class="form-sub">Leave your info and Moses will call you back — no pressure, no obligation.</div>
+
+        <div id="form-content">
+          <form id="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row" style="margin-top:24px;">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="First & Last Name" required />
+              </div>
+              <div class="form-group">
+                <label>Age</label>
+                <input type="number" name="age" placeholder="Your Age" min="18" max="90" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>ZIP Code</label>
+                <input type="text" name="zip" placeholder="ZIP Code" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="(xxx) xxx-xxxx" required />
+              </div>
+            </div>
+            <button type="submit" class="btn-form">Request My Free Quote →</button>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="check">✓</div>
+            <h3>Got it — Moses will call you shortly!</h3>
+            <p>Keep your phone nearby. He usually calls within a few hours during business hours.</p>
+          </div>
+
+          <!-- OR divider -->
+          <div style="display:flex;align-items:center;gap:12px;margin:20px 0;">
+            <div style="flex:1;height:1px;background:var(--border);"></div>
+            <span style="font-size:0.78rem;color:var(--text-muted);letter-spacing:0.08em;text-transform:uppercase;">OR</span>
+            <div style="flex:1;height:1px;background:var(--border);"></div>
+          </div>
+
+          <!-- Two side-by-side buttons -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <a href="tel:+14083415826" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border:1.5px solid var(--gold);border-radius:6px;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(201,151,58,0.08)'" onmouseout="this.style.background='transparent'">
+              📞 Call Now
+            </a>
+            <a href="https://calendly.com/mosesrey/new-meeting" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border:1.5px solid var(--border);border-radius:6px;color:var(--text-muted);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
+              📅 Book a Time
+            </a>
+          </div>
+        </div>
+
+        <div class="form-disclaimer" style="margin-top:14px;">By submitting, you agree to be contacted by Moses Reyes regarding insurance options. Your info is never sold.</div>
       </div>
       </div>
     </div>
